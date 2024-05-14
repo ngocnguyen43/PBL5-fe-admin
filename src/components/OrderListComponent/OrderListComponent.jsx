@@ -27,6 +27,7 @@ const ActionButton = styled.a`
   }
 `;
 
+//Lich su mua hang
 const App = () => {
   const navigate = useNavigate();
   const user = useSelector(state => state.user);
@@ -54,15 +55,9 @@ const App = () => {
 
   const getColor = (status) => {
     if (status === 'Approved') return 'green'; // Green color
-    if (status === 'Pending') return 'volcano'; // Red color
-    // Add more colors here if needed
+    if (status === 'Pending') return 'volcano'; 
     return 'geekblue'; // Default color
   };
-
-  // const handleStatusChange = (record, index) => {
-  //   console.log("Status changed for record: ", record);
-  //   console.log("Index: ", index);
-  // };
 
   const getGradientColors = (colors) => {
     return `linear-gradient(to right, ${colors.join(', ')})`;
