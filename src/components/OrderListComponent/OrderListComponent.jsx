@@ -239,11 +239,9 @@ const App = () => {
       const updatedRecord = data.data.result;
       const dataIndex = reqData.findIndex(item => item.requestId === updatedRecord.requestId);
       if (dataIndex !== -1) {
-        // Cập nhật phần tử tại vị trí dataIndex với dữ liệu mới
         const updatedData = [...reqData];
         updatedData[dataIndex] = updatedRecord;
         
-        // Cập nhật mảng dữ liệu mới
         setReqData(updatedData);
         alert('Status updated successfully');
       } else {
