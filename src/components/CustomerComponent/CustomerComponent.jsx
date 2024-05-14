@@ -226,6 +226,7 @@ const App = () => {
               cancelText="Hủy"
               onConfirm={() => handleSecondAction(record)}
             >
+            {/* Delete */}
               <ActionButton type="link">Delect</ActionButton>
             </Popconfirm>
           </Menu.Item>
@@ -284,7 +285,7 @@ const App = () => {
               handleSave(recordToUpdate.key, { ...recordToUpdate, ...values });
             }}
             initialValues={recordToUpdate}
-            form={formUpdate} // Pass the form instance to the Form component
+            form={formUpdate} 
           >
             <Form.Item
               label="Name"
