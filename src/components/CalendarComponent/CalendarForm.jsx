@@ -59,7 +59,6 @@ const AppointmentForm = () => {
           fetch(`${process.env.REACT_APP_API_URL}/api/v1/providers`, {
             method: "GET",
             headers: {
-              // 'Content-Type': 'application/json',
               'Authorization': `Bearer ${user.access_token}`
             },
           })
@@ -83,7 +82,6 @@ const AppointmentForm = () => {
           fetch(`${process.env.REACT_APP_API_URL}/api/v1/stations`, {
             method: "GET",
             headers: {
-              // 'Content-Type': 'application/json',
               'Authorization': `Bearer ${user.access_token}`
             },
           })
@@ -107,7 +105,6 @@ const AppointmentForm = () => {
           fetch(`${process.env.REACT_APP_API_URL}/api/v1/trains`, {
             method: "GET",
             headers: {
-              // 'Content-Type': 'application/json',
               'Authorization': `Bearer ${user.access_token}`
             },
           })

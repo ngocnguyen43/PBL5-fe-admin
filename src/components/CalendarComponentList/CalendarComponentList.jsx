@@ -40,9 +40,9 @@ const App = () => {
 
 
   const getColor = (status) => {
-    if (status === 'Approved') return 'green'; // Green color
-    if (status === 'Pending') return 'volcano'; // Red color
-    if (status === 'Reject') return 'geekblue'; // Red color
+    if (status === 'Approved') return 'green'; 
+    if (status === 'Pending') return 'volcano'; 
+    if (status === 'Reject') return 'geekblue'; 
   };
 
   const handleApprovedChange = (record) => {
