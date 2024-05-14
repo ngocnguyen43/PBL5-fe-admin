@@ -98,9 +98,9 @@ const CalendarView = () => {
           style={{
             width: '12px',
             height: '12px',
-            backgroundColor: getRandomColor(), // Lấy màu ngẫu nhiên
+            backgroundColor: getRandomColor(),
             borderRadius: '50%',
-            margin: '2px', // Add some margin between dots
+            margin: '2px', 
           }}
         ></div>
       ));
