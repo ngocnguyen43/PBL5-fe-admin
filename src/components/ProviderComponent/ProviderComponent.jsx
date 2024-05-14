@@ -27,17 +27,15 @@ const ActionButton = styled.a`
   }
 `;
 
+//Provider
 const App = () => {
   const navigate = useNavigate();
   const user = useSelector(state => state.user);
   const [customerData, setCustomerData] = useState([]);
 
 
-  /////////////////       UPDATE             /////////////////
   const [formUpdate] = Form.useForm(); // Add this line to create the form instance
   const [recordToUpdate, setRecordToUpdate] = useState(null);
-  // const [errorMessage, setErrorMessage] = useState('');
-  // console.log("errorMessage: "+errorMessage);
 
   
 
