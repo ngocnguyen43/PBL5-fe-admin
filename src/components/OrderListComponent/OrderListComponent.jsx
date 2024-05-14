@@ -227,20 +227,16 @@ const App = () => {
     const formData = new FormData();
     formData.append("status", newStatus);
 
-    // Send request to update status
     fetch(`${process.env.REACT_APP_API_URL}/api/v1/schedule_requests/${record.requestId}`, {
       method: 'PUT',
       headers: {
-        // 'Content-Type': 'application/json',
         'Authorization': `Bearer ${user.access_token}`
       },
       body: formData,
     })
     .then(response => response.json())
     .then(data => {
-      // Assuming the server response contains the updated record
       const updatedRecord = data.data.result;
-      // Update the data array with the updated record
       const dataIndex = reqData.findIndex(item => item.requestId === updatedRecord.requestId);
       if (dataIndex !== -1) {
         // Cập nhật phần tử tại vị trí dataIndex với dữ liệu mới
