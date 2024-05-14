@@ -124,7 +124,6 @@ const App = () => {
       key: 'operation',
       fixed: 'right',
       width: 150,
-          // title={record.status === 'Pending' ? 'Bạn có chắc chắn muốn cập nhật yêu cầu lịch trình mới?' : 'Bạn có chắc chắn muốn hủy yêu cầu lịch trình?'}
           render: (record, index) => (
             <Dropdown
               overlay={
