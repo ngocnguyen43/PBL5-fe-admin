@@ -74,7 +74,7 @@ const App = () => {
       };
     const handleUpdate = (record) => {
       setRecordToUpdate({ ...record });
-      formUpdate.setFieldsValue(record); // Set form fields with current row data
+      formUpdate.setFieldsValue(record); 
       setOpenUpdateModal(true);
     };
 
