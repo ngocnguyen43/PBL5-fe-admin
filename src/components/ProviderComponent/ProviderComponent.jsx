@@ -55,7 +55,7 @@ const App = () => {
         newData.splice(index, 1, {
           ...item,
           ...row,
-          date: moment(row.date), // Convert date to moment object
+          date: moment(row.date), 
         });
         setCustomerData(newData);
         setOpenUpdateModal(false);
