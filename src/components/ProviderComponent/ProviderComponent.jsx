@@ -34,7 +34,7 @@ const App = () => {
   const [customerData, setCustomerData] = useState([]);
 
 
-  const [formUpdate] = Form.useForm(); // Add this line to create the form instance
+  const [formUpdate] = Form.useForm(); 
   const [recordToUpdate, setRecordToUpdate] = useState(null);
 
   
