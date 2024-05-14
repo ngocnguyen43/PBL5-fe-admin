@@ -1,12 +1,13 @@
-import { Tag, ConfigProvider, Dropdown, Menu } from 'antd'; 
-import moment from 'moment'; 
-import { useState, useEffect } from "react"; 
-import { Table, Popconfirm } from 'antd'; 
-import { useSelector } from 'react-redux'; 
-import { useNavigate } from "react-router-dom"; 
-import { DownOutlined } from '@ant-design/icons' 
+import { Tag, ConfigProvider, Dropdown, Menu } from 'antd';
+import moment from 'moment';
+import { useState, useEffect } from "react";
+import { Table, Popconfirm } from 'antd';
 
-import styled from 'styled-components'; 
+import { useSelector } from 'react-redux';
+import { useNavigate } from "react-router-dom";
+import { DownOutlined } from '@ant-design/icons'
+
+import styled from 'styled-components';
 
 const ActionButton = styled.a`
   display: inline-block;
