@@ -35,8 +35,8 @@ const App = () => {
   const [customerData, setCustomerData] = useState([]);
 
 
-  /////////////////       UPDATE             /////////////////
-  const [formUpdate] = Form.useForm(); // Add this line to create the form instance
+// Update
+  const [formUpdate] = Form.useForm(); 
   const [recordToUpdate, setRecordToUpdate] = useState(null);
 
   
@@ -57,7 +57,7 @@ const App = () => {
         newData.splice(index, 1, {
           ...item,
           ...row,
-          date: moment(row.date), // Convert date to moment object
+          date: moment(row.date), 
         });
         setCustomerData(newData);
         setOpenUpdateModal(false);
@@ -243,36 +243,7 @@ const App = () => {
   const handleSecondAction = (record) => {
     console.log("record2", record);
   }
-  // const handleStatusChange = (record) => {
-  //   let newStatus;
-  //   if (record.status === 'Approved') {
-  //     newStatus = 'Pending';
-  //   } else if (record.status === 'Pending') {
-  //     newStatus = 'Approved';
-  //   }
 
-  //   const formData = new FormData();
-  //   formData.append("status", newStatus);
-
-  //   fetch(`${process.env.REACT_APP_API_URL}/api/v1/schedule_requests/${record.requestId}`, {
-  //     method: 'PUT',
-  //     headers: {
-  //       'Authorization': `Bearer ${user.access_token}`
-  //     },
-  //     body: formData,
-  //   })
-  //   .then(response => response.json())
-  //   .then(data => {
-  //     const updatedRecord = data.data.result;
-  //     const updatedData = customerData.map(item => item.requestId === updatedRecord.requestId ? updatedRecord : item);
-  //     setCustomerData(updatedData);
-  //     alert('Status updated successfully');
-  //   })
-  //   .catch(error => {
-  //     console.error('Error updating status:', error);
-  //     alert('Failed to update status');
-  //   });
-  // };
 
   const rowStyle = { height: '20px' };
   const cellStyle = { padding: '0' };
