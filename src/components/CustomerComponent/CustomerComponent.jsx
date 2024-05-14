@@ -38,8 +38,6 @@ const App = () => {
   /////////////////       UPDATE             /////////////////
   const [formUpdate] = Form.useForm(); // Add this line to create the form instance
   const [recordToUpdate, setRecordToUpdate] = useState(null);
-  // const [errorMessage, setErrorMessage] = useState('');
-  // console.log("errorMessage: "+errorMessage);
 
   
 
@@ -78,7 +76,7 @@ const App = () => {
       };
     const handleUpdate = (record) => {
       setRecordToUpdate({ ...record });
-      formUpdate.setFieldsValue(record); // Set form fields with current row data
+      formUpdate.setFieldsValue(record); 
       setOpenUpdateModal(true);
     };
 
